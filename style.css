@@ -10,7 +10,9 @@
   --white-1000: #fff;
   --black-1000: #000;
   --gray-700: #bfbcbc;
-  --gray-900: #757575;
+  --gray-900: #4f4b4b;
+
+  --acsent-color: #d4975a;
 }
 
 html,
@@ -59,7 +61,8 @@ a {
   padding-bottom: 30px;
 }
 .block-name span {
-  font-size: 24px;
+  font-size: 35px;
+  color: var(--acsent-color);
 }
 .block-button {
   background-color: transparent;
@@ -179,6 +182,47 @@ a {
 }
 
 
+.AboutUs {
+  margin-top: 100px;
+}
+.aboutUs-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray-900);
+  margin-top: 50px;
+}
+.aboutUs-advantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+  margin-top: 50px;
+  border: 1px solid var(--gray-700);
+  padding: 40px;
+  border-radius: 20px;
+}
+.advantage-card {
+  display: flex;
+  align-items: start;
+}
+.advantage-icon {
+  flex: 1 1 100px;
+  margin-top: 5px;  
+}
+.advantage-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--acsent-color);
+}
+.advantage-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 10px;
+
+  color: var(--gray-900);
+}
+
+
 .association {
   margin-top: 100px;
 }
@@ -208,10 +252,49 @@ a {
   line-height: 1.7;
   max-width: 500px;
   margin-top: 15px;
+  color: var(--gray-900);
+}
+.association-part__buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
 }
 .association-part-button {
-  margin-top: 10px;
+  text-transform: uppercase;
 }
 .association-part-img {
   width: 40%;
+}
+
+
+
+.footer {
+  margin-top: 100px;
+}
+.footer-logo-description {
+  max-width: 300px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer-content-part {
+  display: flex;
+  justify-content: end;
+  gap: 50px;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+.footer-column-title {
+  font-size: 16px;
+  font-weight: 700;
+  flex: 0 0 50px;
+}
+.footer-column-item {
+  margin-bottom: 8px;
 }
