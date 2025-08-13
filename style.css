@@ -90,6 +90,8 @@ a {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
+
+  z-index: 1000;
 }
 .header-menu__item {
   font-size: 14px;
@@ -174,4 +176,42 @@ a {
 }
 .event-card__button {
   margin-top: 8px;
+}
+
+
+.association {
+  margin-top: 100px;
+}
+.association-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.association-content-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.association-part-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.association-part-text-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.association-part-describtion {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 500px;
+  margin-top: 15px;
+}
+.association-part-button {
+  margin-top: 10px;
+}
+.association-part-img {
+  width: 40%;
 }
