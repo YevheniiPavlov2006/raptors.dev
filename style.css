@@ -12,6 +12,8 @@
   --gray-700: #bfbcbc;
   --gray-900: #4f4b4b;
 
+  --gray-200: #eaeaea;
+
   --acsent-color: #d4975a;
 }
 
@@ -71,6 +73,12 @@ a {
   border-radius: 5px;
   border: 1px solid var(--gray-900);
   padding: 8px 15px;
+
+  transition: 0.4s;
+}
+.block-button:hover {
+  background-color: var(--gray-900);
+  color: var(--white-1000);
 }
 .badge {
   border: 1px solid var(--gray-900);
@@ -151,10 +159,17 @@ a {
   margin-top: 100px;
 }
 .value-block {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+.value-block__title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.value-block__faq {
+  grid-column-start: 3;
+  grid-column-end: 7;
 }
 .value-block__title-button {
   margin-top: 20px;
@@ -761,4 +776,117 @@ a {
   font-size: 14px;
   line-height: 1.4;
   margin-top: 10px;
+}
+
+
+
+
+/*--------------------------------------------------------membership---------------------------------------------------*/
+
+
+.fellowship {
+  margin-top: 100px;
+}
+.discover-membership {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+.discover-description {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.discover-apply-panel {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+.discover-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+.discover-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.discover-text span {
+  color: var(--gray-900);
+}
+.discover-apply-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 30px 20px;
+  background-color: var(--gray-200);
+  border-radius: 15px;
+
+  box-shadow: 0 0 3px 1px var(--gray-700);
+}
+.apply-panel-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+.apply-panel-text {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.5;
+
+  flex: 1 1 auto;
+}
+.apply-panel-button {
+  flex: 1;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.apply-panel-button:hover {
+  background-color: var(--gray-900);
+  color: var(--white-1000);
+}
+
+.rules-membership {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  margin-top: 80px;
+}
+.rules-content {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+.rules-documents {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.rules-documents {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.document-membership {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: var(--gray-900);
+  color: var(--white-1000);
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+
+  box-shadow: 0 0 3px 1px var(--gray-900);
+  transition: 0.4s;
+}
+.document-membership:hover {
+  box-shadow: none;
+}
+.document-membership img {
+  width: 30px;
 }
