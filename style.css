@@ -129,7 +129,7 @@ a {
 }
 .banner img {
   max-height: 450px;
-  min-width: 100vw;
+  min-width: 100%;
 } 
 .banner h1 {
   position: absolute;
