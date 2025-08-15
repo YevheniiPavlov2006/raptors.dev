@@ -1,0 +1,61 @@
+.burger-button {
+  --height: 18px;
+  --ratio: 1.5;
+  --width: calc(var(--height) * var(--ratio));
+  --color: #000000;
+
+  width: var(--width);
+  height: var(--height);
+
+  position: relative;
+  cursor: pointer;
+
+  display: none;
+  z-index: 100000000000;
+}
+
+.burger-button::before, .burger-button::after, .burger-button div {
+  content: '';
+
+  width: var(--width);
+  height: 0px;
+
+  position: absolute;
+  left: 0%;
+
+  transform-origin: center;
+  transition: 0.3s;
+ 
+  border: 1px solid var(--color);
+
+  box-sizing: border-box;
+}
+.burger-button::before {
+  top: 0;
+}
+.burger-button::after {
+  bottom: 0;
+}
+.burger-button div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-button.active::before {
+  top: 50%;
+  transform: translateY(-50%) rotateZ(45deg);
+}
+.burger-button.active::after {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.burger-button.active  div {
+  opacity: 0;
+}
+
+@media (max-width:1000px){
+  .burger-button {
+    display: block;
+  }
+}

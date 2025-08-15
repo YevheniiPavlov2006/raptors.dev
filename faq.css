@@ -93,3 +93,21 @@
   margin-top: 20px;
 }
 
+
+@media(max-width:700px){
+  .faq-item__content-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width:500px){
+  .faq-item__label {
+    font-size: 14px;
+  }
+  .faq-item {
+    --pading: 15px 12px;
+  }
+  .faq-item__content-text {
+    font-size: 12px;
+  }
+}
+

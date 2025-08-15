@@ -36,3 +36,20 @@ document.querySelectorAll('.pdfViewer').forEach((viewer, i) => {
         }
     });
 });
+
+
+
+/*----------------------------------burger-button------------------------------*/
+
+const burgerButton = document.getElementById('burger-button')
+const sidebar = document.getElementById('sidebar')
+
+const burgerButtonActiveClass = 'active'
+const sidebarActiveClass = 'opened'
+const bodyFixedClass = 'body--fixed'
+
+burgerButton.addEventListener('click', function(){
+  burgerButton.classList.toggle(burgerButtonActiveClass)
+  sidebar.classList.toggle(sidebarActiveClass)
+  document.body.classList.toggle(bodyFixedClass)
+})
