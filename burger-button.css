@@ -11,7 +11,7 @@
   cursor: pointer;
 
   display: none;
-  z-index: 100000000000;
+  z-index: 1000;
 }
 
 .burger-button::before, .burger-button::after, .burger-button div {
