@@ -55,6 +55,8 @@ button {
 a {
   text-decoration: none;
   cursor: pointer;
+
+  color: var(--black-1000);
 }
 .title {
   font-size: 32px;
@@ -1397,7 +1399,7 @@ a {
   font-size: 16px;
   line-height: 1.5;
 }
-.apply-form-text span {
+.apply-form-text span a {
   color: var(--acsent-color);
   font-weight: 900;
   border-bottom: 1px solid var(--acsent-color);

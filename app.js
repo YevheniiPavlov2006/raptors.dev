@@ -77,3 +77,17 @@ burgerButton.addEventListener('click', function(){
   sidebar.classList.toggle(sidebarActiveClass)
   document.body.classList.toggle(bodyFixedClass)
 })
+
+
+const sidebarItems = document.querySelectorAll('.sidebar-menu-item')
+
+sidebarItems.forEach(item => {
+  item.addEventListener('click', () => {
+
+    console.log('heroih')
+
+    sidebar.classList.remove(sidebarActiveClass)
+    burgerButton.classList.remove(burgerButtonActiveClass)
+    document.body.classList.remove(bodyFixedClass)
+  })
+})
