@@ -1675,3 +1675,74 @@ a {
   margin-top: 10px;
   text-align: justify;
 }
+
+
+@media(max-width:1000px) {
+  .person {
+    margin-top: 120px;
+  }
+  .person-block {
+    gap: 40px; 
+  }
+  .person-block-name {
+    font-size: 45px;
+  }
+  .person-block-company, .person-block-location {
+    font-size: 20px;
+  }
+  .person-block-button {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+}
+@media(max-width:900px){
+  .person-block-img img {
+    width: 280px;
+  }
+  .person-description {
+    margin-top: 60px;
+  }
+}
+@media(max-width:800px){
+  .person-block-name {
+    font-size: 30px;
+  }
+  .person-block-workplace {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .person-description-content-title {
+    font-size: 18px;
+  }
+  .person-description-content-text {
+    font-size: 12px;
+  }
+}
+@media(max-width:680px){
+  .person-block {
+    flex-direction: column;
+  }
+  .person-block-img img {
+    width: 320px;
+  }
+  .person-block-name {
+    font-size: 35px;
+  }
+  .person-description .container {
+    gap: 20px;
+  }
+}
+@media (max-width:600px) {
+  .person-description .container {
+    grid-template-columns: 1fr;
+  }
+  .person-contant-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+@media(max-width:450px){
+  .person-block-img img {
+    width: 100%;
+  }
+}
